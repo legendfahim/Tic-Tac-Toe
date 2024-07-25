@@ -1,0 +1,240 @@
+/* all reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+/* header */
+.title {
+  position: absolute;
+  top: 0.5rem;
+  color: rgb(255, 150, 23);
+  font-weight: bold;
+  font-style: italic;
+  cursor: context-menu;
+}
+/* main body */
+.board {
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+  border: 3px solid rgb(236, 131, 131);
+  background-color: rgb(255, 255, 255);
+  height: 80%;
+  width: 60%;
+}
+/* all cells */
+.cell {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: gold;
+}
+#cell-mark {
+  position: absolute;
+  font-size: 5rem;
+}
+/* play again waiting box  */
+.replay {
+  background-color: rgb(96, 178, 222) !important;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+}
+.replay h1 {
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+/* Replay button  */
+.btn {
+  font-size: 2rem;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition-duration: 400ms;
+}
+.btn:hover {
+  background-color: gray;
+  color: white;
+}
+/* undo warning  */
+.undo-warn {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 208, 66);
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+/* warn sign of the warning message */
+.warn-sign {
+  color: red;
+  font-size: 1.5rem;
+}
+/* Choice board  */
+.choice {
+  position: absolute;
+  background-color: rgb(132 142 255);
+  height: 80%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 1rem;
+}
+/* Choice board options  */
+.users {
+  display: flex;
+}
+/* Choice board option buttons */
+.b {
+  font-size: 4rem;
+  margin: 1rem 2rem 0 0;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 100%;
+  height: 80%;
+}
+.b:hover {
+  background-color: gainsboro;
+}
+/* Game end result board  */
+.result-board {
+  position: absolute;
+  background-color: gold;
+  border-radius: 1rem;
+  border: 2px slid black;
+  padding: 1rem;
+  width: 40%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Result board exit button  */
+.cross {
+  position: relative;
+  bottom: 0.5rem;
+  right: 4rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+}
+/* Result board's result*/
+.result {
+  display: flex;
+}
+/* Result board header text */
+.result-board h1 {
+  font-size: 3rem;
+}
+/* Result board winner and loser divider */
+
+.result-board hr {
+  height: 10rem;
+  border: 3px solid red;
+}
+.result-board span {
+  font-size: 3rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  padding: 2px;
+}
+/* Result winner section */
+.winner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  color: rgb(131, 17, 70);
+}
+/* Result loser section */
+.loser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+/* Game draw board  */
+.draw {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+/* Draw board exit button  */
+.drawX {
+  color: red;
+  position: absolute;
+  bottom: 5rem;
+  cursor: pointer;
+}
+/* Theme button  */
+.dark-btn {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+.dark-btn:hover {
+  background-color: gray;
+}
+/* Every cell vision mark  */
+.mark {
+  position: absolute;
+}
+/* Total point board  */
+.point-board {
+  position: absolute;
+  left: 2%;
+}
+.data {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border: 2px dotted;
+  overflow-x: auto;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+}
+.point-name {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.point {
+  font-size: 2rem;
+}
+::selection{
+  background-color: transparent;
+}

@@ -1,0 +1,52 @@
+/* Main board  */
+.board {
+  height: 50%;
+  width: 80%;
+}
+/* header title  */
+.title {
+  top: 3rem;
+}
+/* Replay board  */
+.replay {
+  width: 70%;
+  height: 40%;
+}
+/* Choice board  */
+.choice {
+  height: 50%;
+  width: 80%;
+  font-size: 1rem;
+}
+/* Choice buttons  */
+.b {
+  font-size: 2rem;
+}
+/* result board  */
+.result-board {
+  width: 60%;
+  height: 30%;
+}
+.result-board h1 {
+  font-size: 1.5rem;
+}
+.result-board span {
+  font-size: 3rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  padding: 2px;
+}
+.cross {
+  right: 1rem;
+}
+/* Game draw board  */
+.draw {
+  font-size: 1.5rem;
+}
+
+.dark-btn{
+  top: 7%;
+}
+.point-board{
+  bottom: 2%;
+}
